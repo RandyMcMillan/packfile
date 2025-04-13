@@ -24,9 +24,20 @@ time = "0.3.15"
 tokio-util = { version = "0.7", features = ["codec"], optional = true }
 tracing = { version = "0.1", optional = true }
 
-[dev-dependencies]
+##[dev-dependencies]
 insta = { version = "1.29", features = ["filters"] }
 tempfile = "3.5"
+##[dependencies]
+##libp2p = { version = "0.50", features = ["tcp-tokio","noise-tokio", "mplex-tokio", "floodsub", "tokio"] }
+async-std = "1.12"
+futures = "0.3"
+tokio = { version = "1", features = ["full"] }
+#tokio-util = { version = "0.7", features = ["codec"] }
+#libp2p = { version = "0.55.0", features = ["tcp", "tokio", "noise", "yamux", "floodsub"] }
+serde = { version = "1.0", features = ["derive"] }
+clap = { version = "4.5.6", features = ["derive"] }
+libp2p = { version = "0.55.0", features = [ "tokio", "cbor", "dns", "floodsub", "kad", "noise", "macros", "request-response", "tcp", "websocket", "yamux"] }
+tracing-subscriber = { version = "0.3.19", features = ["env-filter"] }
 
 [features]
 default = ["tokio-util", "tracing"]

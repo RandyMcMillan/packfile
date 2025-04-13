@@ -27,7 +27,8 @@ pub mod high_level;
 pub mod low_level;
 mod packet_line;
 mod util;
-
+pub mod network;
+//pub use network;
 pub use error::Error;
 pub use packet_line::PktLine;
 
