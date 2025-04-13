@@ -1,6 +1,6 @@
 [package]
-name = "packfile"
-authors = ["Jordan Doyle <jordan@doyle.la>"]
+name = "packfile-sharing"
+authors = ["gnostr <admin@gnostr.org>", "Jordan Doyle <jordan@doyle.la>"]
 description = "A simple library providing utilities to generate Git Packfiles in memory and send them to clients"
 version = "0.1.2"
 edition = "2021"
